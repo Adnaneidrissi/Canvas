@@ -36,28 +36,28 @@ class CircleView(context: Context, attrs: AttributeSet) : View(context, attrs) {
     }
 
     fun moveUp() {
-        if (circleY - radius > 0) { // Empêche de sortir en haut
+        if (circleY - radius > 0) {
             circleY -= 50f
         }
-        invalidate() // Redessine la vue
+        invalidate()
     }
 
     fun moveDown() {
-        if (circleY + radius < screenHeight) { // Empêche de sortir en bas
+        if (circleY + radius < screenHeight) {
             circleY += 50f
         }
         invalidate()
     }
 
     fun moveLeft() {
-        if (circleX - radius > 0) { // Empêche de sortir à gauche
+        if (circleX - radius > 0) {
             circleX -= 50f
         }
         invalidate()
     }
 
     fun moveRight() {
-        if (circleX + radius < screenWidth) { // Empêche de sortir à droite
+        if (circleX + radius < screenWidth) {
             circleX += 50f
         }
         invalidate()
